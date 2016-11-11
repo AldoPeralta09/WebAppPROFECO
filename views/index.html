@@ -1,0 +1,31 @@
+$def with(data_list)
+<!doctype html>
+<html>
+   <head>
+       <meta charset="UTF-8"/>
+      <title>WebApp PROFECO</title>
+   </head>
+   <body bgcolor = "black">
+       
+       <iframe width="100%" height="520" frameborder="0" src="https://1714110453.carto.com/viz/30fb718c-a57f-11e6-9bb4-0e3a376473ab/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+       <font color="white" face="Comic Sans MS,arial">
+           <table border="5" bordercolor="white" align="center" cellpadding = 5>
+            <thead>
+                <tr>
+                    <th>Nombre del comercio</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                $for row in data_list: 
+                    <tr>
+                        <td >$row[0]</td>
+                        <td align = center>$row[1]</td>
+                        <td align = center>$row[2]</td>
+                    </tr>
+            </tbody>
+           </table>
+        </font>
+   </body>
+</html>
