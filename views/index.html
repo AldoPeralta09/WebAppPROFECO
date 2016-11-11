@@ -20,9 +20,9 @@ $def with(data_list)
             <tbody>
                 $for row in data_list: 
                     <tr>
-                        <td >$row[0]</td>
-                        <td align = center>$row[1]</td>
-                        <td align = center>$row[2]</td>
+                        <td >$row["nombreComercial"]</td>
+                        <td align = center>$row["producto"]</td>
+                        <td align = center>$row["precio"]</td>
                     </tr>
             </tbody>
            </table>
